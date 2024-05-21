@@ -6,9 +6,9 @@ public class DefaultCountingOutRhymer {
 
     private static final int ERROR = -1;
 
-    private static final int SIZE = 12;
+    private static final int MAX_SIZE = 12;
 
-    private final int[] numbers = new int[SIZE];
+    private final int[] numbers = new int[MAX_SIZE];
 
     public int total = ERROR;
 
