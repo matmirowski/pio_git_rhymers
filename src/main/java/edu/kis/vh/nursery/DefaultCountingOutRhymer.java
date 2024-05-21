@@ -4,13 +4,15 @@ public class DefaultCountingOutRhymer {
 
     private static final int MAX = 11;
 
+    private static final int DEFAULT_VALUE = -1;
+
     private static final int ERROR = -1;
 
     private static final int MAX_SIZE = MAX + 1;
 
     private final int[] numbers = new int[MAX_SIZE];
 
-    public int total = ERROR;
+    public int total = DEFAULT_VALUE;
 
     public void countIn(int in) {
         if (!isFull())
@@ -18,7 +20,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean callCheck() {
-        return total == ERROR;
+        return total == DEFAULT_VALUE;
     }
 
     public boolean isFull() {
